@@ -5,7 +5,7 @@
 [![ObsPy](https://img.shields.io/badge/ObsPy-1.4.0-2A6EBB)](https://obspy.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey)](https://github.com/yourusername/CAPQuake)
-[![Status](https://img.shields.io/badge/Status-Beta-orange)](https://github.com/yourusername/CAPQuake)
+[![状态](https://img.shields.io/badge/Status-Beta-orange)](https://github.com/yourusername/CAPQuake)
 [![Data Sources](https://img.shields.io/badge/Data%20Sources-25+-brightgreen)](https://github.com/yourusername/CAPQuake)
 [![Code Style](https://img.shields.io/badge/Code%20Style-PEP%208-000000)](https://www.python.org/dev/peps/pep-0008/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
@@ -22,7 +22,7 @@
 - 此项目会**全部开源**，并提供**国标标准版**和**完整版**。推荐使用国标标准版，遵守中国大陆的法律法规。
 
 
-
+![Preview](0.2.21.png)
 
 ## ✨ 项目特性
 
