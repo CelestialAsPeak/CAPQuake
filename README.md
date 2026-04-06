@@ -1,5 +1,7 @@
 # CAPQuake — 全球地震震讯，地震预警与实时可视化以及气象，海啸，火山等综合灾讯整合平台
 
+
+
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://python.org)
 [![Pygame](https://img.shields.io/badge/Pygame-2.5.0-4B8BBE)](https://pygame.org)
 [![ObsPy](https://img.shields.io/badge/ObsPy-1.4.0-2A6EBB)](https://obspy.org)
@@ -9,6 +11,8 @@
 [![Data Sources](https://img.shields.io/badge/Data%20Sources-25+-brightgreen)](https://github.com/yourusername/CAPQuake)
 [![Code Style](https://img.shields.io/badge/Code%20Style-PEP%208-000000)](https://www.python.org/dev/peps/pep-0008/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+
+
 
 ***此项目在快速迭代 功能在不断增加 预计后续内测后会完整公开***
 
@@ -187,14 +191,17 @@ ObsPy 是国际通用的地震学 Python 工具包，CAPQuake 深度集成 ObsPy
 git clone https://github.com/yourusername/CAPQuake.git
 cd CAPQuake
 ```
-2. 创建虚拟环境（推荐conda）
+2. 本项目是在conda环境编写的。所以推荐使用conda环境。
 ```bash
-python -m venv venv
-source venv/bin/activate      # Linux/macOS
-venv\Scripts\activate         # Windows
+#创建 Conda 环境
+conda create -n capquake python=3.10
+conda activate capquake
+#安装核心依赖
+conda install -c conda-forge obspy pygame shapely pandas numpy
+pip install requests websocket-client openpyxl Pillow pytz
 ```
 
-3. 安装依赖
+3. 如果您的电脑有C++的编写环境，那么可以一键安装Obspy,运行以下指令即可。
 ```bash
 pip install pygame 
 pip install obspy 
