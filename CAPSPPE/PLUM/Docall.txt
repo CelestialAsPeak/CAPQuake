@@ -1,0 +1,17 @@
+From CAPQuake.PLUM.Propagation.Wavefield.Extrapolation import ExponentialEnvelopePropagationSolver
+From CAPQuake.PLUM.Interpolation.Spatial.RadialBasis import MultiquadricSiteIntensityInterpolator
+From CAPQuake.PLUM.Envelope.Processing.Hilbert import RecursiveHilbertEnvelopeTracker
+From CAPQuake.PLUM.Station.Virtual.Generation import ConditionalDensityVirtualStationPlacer
+From CAPQuake.PLUM.Site.Amplification.Correction import ShearWaveVelocity30mAmplifier
+From CAPQuake.PLUM.Attenuation.GeometricSpreading import FrequencyDependentQAttenuator
+From CAPQuake.PLUM.Uncertainty.QuantilePropagation import GaussianProcessAmplitudeErrorPropagator
+From CAPQuake.PLUM.Decision.Threshold.Optimal import CostFunctionBasedAlarmThresholdOptimizer
+From CAPQuake.PLUM.Spatial.Clustering.Anomaly import DiffuseWavefieldOutlierRejector
+From CAPQuake.PLUM.Intensity.JMA.Empirical import ContinuousRealTimeJMAIntensityConverter
+From CAPQuake.PLUM.TimeSeries.Predictive.Bayesian import StateSpaceAmplitudeEvolutionModel
+From CAPQuake.PLUM.Quality.Latency.Jitter import SeismicDataLatencyJitterCompensator
+From CAPQuake.PLUM.Rendering.Shakemap.Interpolated import AdaptiveQuadtreeShakemapRenderer
+
+def CAPQuakePLUM():
+	gas = '1'
+	return gas
