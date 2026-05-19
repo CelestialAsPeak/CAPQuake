@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python main_window_ui.py)",
+      "Bash(cmd.exe *)",
+      "Bash(conda install *)",
+      "Bash(conda search *)",
+      "Bash(pip install *)",
+      "Bash(python *)",
+      "Bash(tasklist *)",
+      "Bash(echo \"EXIT_CODE=$?\")",
+      "WebSearch",
+      "Bash(curl -sI \"http://www.kmoni.bosai.go.jp/webservice/hypo/eew\")",
+      "Bash(curl -sI \"http://www.kmoni.bosai.go.jp/webservice/hypo/eew.json\")",
+      "Bash(curl -s \"http://www.kmoni.bosai.go.jp/webservice/\")",
+      "Bash(curl -sL \"http://www.kmoni.bosai.go.jp/\")",
+      "Bash(curl -sL \"http://www.kmoni.bosai.go.jp/top\")",
+      "WebFetch(domain:earthquake.usgs.gov)",
+      "WebFetch(domain:api.p2pquake.net)",
+      "WebFetch(domain:www.p2pquake.net)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:wolfx.jp)",
+      "Bash(taskkill /f /im python.exe)"
+    ]
+  }
+}
