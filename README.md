@@ -99,8 +99,9 @@ CAPQuake 的设计愿景是构建一个 **全球地震震讯、地震预警实�
 | 強震モニタ | 实时震度 | 日本全国约 4000+ K-net测站 |
 | KMA PEWS | 实时 MMI | 韩国气象厅实时测站 |
 | S-net | 海底震度 | 日本海底地震观测网 |
-| Obspy全球测站 | 波形 | 基于 ObsPy 从 EarthScope 获取波形 |
-| Iris全球测站 | PGA/PGV | 基于 Iris 获取全球测站PGA/PGV |
+| P-Alert | 实时震度 | 台湾学校地震监测网 |
+| obspy全球测站 | 波形 | 基于 ObsPy 从 EarthScope 获取波形 |
+| IRIS全球测站 | PGA/PGV | 基于 Iris 获取全球测站PGA/PGV |
 
 - **预留扩展接口**：气象（台风、暴雨）、海啸、火山预警模块正在规划与集成开发中，将在0.3.0+版本实装。
 
