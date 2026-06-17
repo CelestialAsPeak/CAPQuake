@@ -11,7 +11,7 @@
 [![ObsPy](https://img.shields.io/badge/ObsPy-1.5+-2A6EBB?style=for-the-badge&logo=seismometer&logoColor=white)](https://obspy.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey?style=for-the-badge)](https://github.com/yourusername/CAPQuake)
-[![Status](https://img.shields.io/badge/Status-v0.5%20Beta-orange?style=for-the-badge)](https://github.com/yourusername/CAPQuake)
+[![状态](https://img.shields.io/badge/Status-v0.5%20Beta-orange?style=for-the-badge)](https://github.com/yourusername/CAPQuake)
 [![Data Sources](https://img.shields.io/badge/Data%20Sources-40+-brightgreen?style=for-the-badge)](https://github.com/yourusername/CAPQuake)
 
 
@@ -191,25 +191,27 @@ P-Alert观测网是由P-Alert地震P波感测仪所构成的即时地震观测�
 
 | 数据类型/来源 | 源标识 | 显示名称 | 协议 | 说明 |
 |:------:|:--------:|:----:|:------|:------|
-| FSSN/CENC官方/Wolfx | `cenc` | CENC | HTTP/WSS | 中国地震台网 |
+| CENC官方/FSSN/Wolfx | `cenc` | CENC | HTTP/WSS | 中国地震台网自动测定/正式测定 |
 | FSSN | `cenc-ir` | CENC | WSS | 中国地震台网烈度速报 |
 | P2P/Wolfx | `jma` | JMA | WSS | 日本气象厅地震情报 |
-| FSSN/USGS官方 | `usgs` | USGS | HTTP/WSS | 美国地质调查局 |
-| FSSN/EMSC官方 | `emsc` | EMSC | HTTP/WSS | 欧洲地中海地震中心 |
-| FSSN | `gfz` | GFZ | WSS | 德国地学研究中心 |
-| GeoNet官方 | `geonet` | GeoNet | HTTP | 新西兰地质科学研究所 |
-| FSSN | `kma` | KMA | WSS | 韩国气象厅 |
-| FSSN | `cwa` | CWA | WSS | 台湾中央气象署 |
-| FSSN/HKO官方 | `hko` | HKO | HTTP/WSS | 香港天文台 |
-| FSSN | `bcsf` | BCSF | WSS | 法国中央地震研究所 |
-| 官方 | `nrcan` | NRCan | HTTP | 加拿大自然资源部 |
-| 官方 | `funvisis` | FUNVISIS | HTTP | 委内瑞拉地震研究基金会 |
-| 官方 | `cenais` | CENAI | HTTP | 古巴国家地震局 |
-| FSSN | `usp` | USP | WSS | 巴西圣保罗大学地震中心 |
+| USGS官方/FSSN | `usgs` | USGS | HTTP/WSS | 美国地质调查局地震情报 |
+| EMSC官方/FSSN | `emsc` | EMSC | HTTP/WSS | 欧洲地中海地震中心地震情报 |
+| GFZ官方/FSSN | `gfz` | GFZ | WSS | 德国地学研究中心地震情报 |
+| GeoNet官方 | `geonet` | GeoNet | HTTP | 新西兰地质地质灾害监测网地震情报 |
+| FSSN | `kma` | KMA | WSS | 韩国气象厅地震情报 |
+| FSSN | `cwa` | CWA | WSS | 台湾中央气象署地震情报 |
+| HKO官方/FSSN | `hko` | HKO | HTTP/WSS | 香港天文台地震情报 |
+| BCSF官方/FSSN | `bcsf` | BCSF | WSS | 法国中央地震研究所地震情报 |
+| NRCan官方 | `nrcan` | NRCan | HTTP | 加拿大自然资源部地震情报 |
+| Funvisis官方 | `funvisis` | FUNVISIS | HTTP | 委内瑞拉地震研究基金会地震情报 |
+| SENAIS官方 | `cenais` | CENAIS | HTTP | 古巴国家地震局地震情报 |
+| FSSN | `usp` | USP | WSS | 巴西圣保罗大学地震情报 |
 | FSSN | `fssn` | FSSN | WSS | FAN Studio 地震速报 |
-| 俄罗斯勘察加地球物理研究所 | `rusk` | RUSK | HTTP | 俄罗斯勘察加地球物理研究所地震目录 |
-| 泰国地震局 | `tl` | tl | HTTP | 泰国地震局地震目录 |
-
+| 俄罗斯勘察加地球物理研究所 | `ru-kcj` | RUKCJ | HTTP | 俄罗斯勘察加地球物理研究所地震目录 |
+| 泰国地震局 | `tmd` | TMD | HTTP | 泰国地震局地震测定 |
+| 菲律宾火山地震研究所官方 | `phivolcs` | PHIVOLCS | HTTP | 菲律宾火山地震研究所地震测定 |
+| 智利大学地震中心 | `csnc` | CSNC | HTTP |智利大学地震中心地震测定 |
+| 印度尼西亚气象、气候和地球物理局 | `bmkg` | BMKG | HTTP | 印度尼西亚气象、气候和地球物理局地震测定烈度速报 |
 
 ### 紧急地震速报 (EEW)
 
@@ -223,7 +225,6 @@ P-Alert观测网是由P-Alert地震P波感测仪所构成的即时地震观测�
 | `kma-eew` | KMA | 韩国气象厅紧急地震速报 |
 | `earlyest` | Earlyest | 墨西哥地震预警 |
 | `globalquake` | GlobalQuake | GlobalQuake地震预警 |
-| `I**` | *** | 成************(高危数据源 不公开) |
 
 ### 气象与海啸
 
