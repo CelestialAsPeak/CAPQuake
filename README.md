@@ -24,11 +24,11 @@
 <tr>
 <td width="70%">
 
->
-> **CAPQuake** 是一款开源的基于 **Python + PySide6 + ObsPy** 构建的地震，气象及其他灾情预警桌面应用程序。
-> 接入了FAN Studio API,Wolfx等10+**第三方数据源**以及CMA,USGS,GeoNet等30+**官方数据源**。
->
->由 ** Python 开发**，采用了模块化设计，方便其他开发者**个性化改编**及制作插件。 更基于Obspy,Metradar等python强大的科学计算库，开发了 **CAPSPPE自动震源机制解**，**震源自动推算**等功能。
+
+ **CAPQuake** 是一款开源的基于 **Python + PySide6 + ObsPy** 构建的地震，气象及其他灾情预警桌面应用程序。
+ 接入了FAN Studio API,Wolfx等10+**第三方数据源**以及CMA,USGS,GeoNet等30+**官方数据源**。
+
+ 由 ** Python 开发**，采用了模块化设计，方便其他开发者**个性化改编**及制作插件。 更基于Obspy,Metradar等python强大的科学计算库，开发了 **CAPSPPE自动震源机制解**，**震源自动推算**等功能。
 
 </td>
 <td width="30%">
@@ -50,18 +50,17 @@
 <tr>
 <td width="70%">
 
->
-> 针对不同的需求，CAPQuake Project设共有3种不同版本的CAPQuake：
-> 
-> 1.**CAPQuake-Lite**
-> 为了性能而设计的版本，具备基础的地震及海啸预警功能。
-> 
-> 2.**CAPQuake-CAPSPPE**
-> 功能最多的版本。除了地震预警外，集成了气象，火山等更多预警功能，以及震源推算，差补时震源推算，CAPSPPE自动震源机制解等。还包括地震，台风模拟。
-> 
-> 3.**CAPQuake-Playground**
-> 专门把地震，台风模拟功能独立出来的一个版本。适合只对地震，台风模拟有兴趣的人。
->
+
+ 针对不同的需求，CAPQuake Project设共有3种不同版本的CAPQuake：
+ 
+ 1.**CAPQuake-Lite**
+ 为了性能而设计的版本，具备基础的地震及海啸预警功能。
+ 
+ 2.**CAPQuake-CAPSPPE**
+ 功能最多的版本。除了地震预警外，集成了气象，火山等更多预警功能，以及震源推算，差补时震源推算，CAPSPPE自动震源机制解等。还包括地震，台风模拟。
+ 
+ 3.**CAPQuake-Playground**
+ 专门把地震，台风模拟功能独立出来的一个版本。适合只对地震，台风模拟有兴趣的人。
 
 </td>
 <td width="30%">
