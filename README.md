@@ -189,41 +189,45 @@ P-Alert观测网是由P-Alert地震P波感测仪所构成的即时地震观测�
 
 ### 地震测定情报源
 
+*为了保证部分地震测定数据源的稳定性，CAPQuake会以CAPQHT json数据为备用数据源，二者混用。
+*实际请求数据时请留意数据来源的使用政策，避免过度请求导致对服务器造成较大压力。
+*CAPQHT json目前还在试验阶段，不保证稳定性
+
 | 数据类型/来源 | 源标识 | 显示名称 | 协议 | 说明 |
 |:------:|:--------:|:----:|:------|:------|
-| CENC官方/FSSN/Wolfx | `cenc` | CENC | HTTP/WSS | 中国地震台网自动测定/正式测定 |
-| FSSN | `cenc-ir` | CENC | WSS | 中国地震台网烈度速报 |
+| CENC官方 / FAN Studio API / Wolfx | `cenc` | CENC | HTTP/WSS | 中国地震台网自动测定/正式测定 |
+| FAN Studio API | `cenc-ir` | CENC | WSS | 中国地震台网烈度速报 |
 | P2P/Wolfx | `jma` | JMA | WSS | 日本气象厅地震情报 |
-| USGS官方/FSSN | `usgs` | USGS | HTTP/WSS | 美国地质调查局地震情报 |
-| EMSC官方/FSSN | `emsc` | EMSC | HTTP/WSS | 欧洲地中海地震中心地震情报 |
-| GFZ官方/FSSN | `gfz` | GFZ | WSS | 德国地学研究中心地震情报 |
+| USGS官方/FAN Studio API | `usgs` | USGS | HTTP/WSS | 美国地质调查局地震情报 |
+| EMSC官方/FAN Studio API | `emsc` | EMSC | HTTP/WSS | 欧洲地中海地震中心地震情报 |
+| GFZ官方/FAN Studio API | `gfz` | GFZ | WSS | 德国地学研究中心地震情报 |
 | GeoNet官方 | `geonet` | GeoNet | HTTP | 新西兰地质地质灾害监测网地震情报 |
-| FSSN | `kma` | KMA | WSS | 韩国气象厅地震情报 |
-| FSSN | `cwa` | CWA | WSS | 台湾中央气象署地震情报 |
-| HKO官方/FSSN | `hko` | HKO | HTTP/WSS | 香港天文台地震情报 |
-| BCSF官方/FSSN | `bcsf` | BCSF | WSS | 法国中央地震研究所地震情报 |
+| FAN Studio API | `kma` | KMA | WSS | 韩国气象厅地震情报 |
+| FAN Studio API | `cwa` | CWA | WSS | 台湾中央气象署地震情报 |
+| HKO官方/FAN Studio API | `hko` | HKO | HTTP/WSS | 香港天文台地震情报 |
+| BCSF官方/FAN Studio API | `bcsf` | BCSF | WSS | 法国中央地震研究所地震情报 |
 | NRCan官方 | `nrcan` | NRCan | HTTP | 加拿大自然资源部地震情报 |
 | Funvisis官方 | `funvisis` | FUNVISIS | HTTP | 委内瑞拉地震研究基金会地震情报 |
 | SENAIS官方 | `cenais` | CENAIS | HTTP | 古巴国家地震局地震情报 |
-| FSSN | `usp` | USP | WSS | 巴西圣保罗大学地震情报 |
-| FSSN | `fssn` | FSSN | WSS | FAN Studio 地震速报 |
+| FAN Studio API | `usp` | USP | WSS | 巴西圣保罗大学地震情报 |
+| FAN Studio API | `fssn` | FSSN | WSS | FSSN 地震速报 |
 | 俄罗斯勘察加地球物理研究所 | `ru-kcj` | RUKCJ | HTTP | 俄罗斯勘察加地球物理研究所地震目录 |
 | 泰国地震局 | `tmd` | TMD | HTTP | 泰国地震局地震测定 |
 | 菲律宾火山地震研究所官方 | `phivolcs` | PHIVOLCS | HTTP | 菲律宾火山地震研究所地震测定 |
 | 智利大学地震中心 | `csnc` | CSNC | HTTP |智利大学地震中心地震测定 |
-| 印度尼西亚气象、气候和地球物理局 | `bmkg` | BMKG | HTTP | 印度尼西亚气象、气候和地球物理局地震测定烈度速报 |
+| 印度尼西亚气象、气候和地球物理局 | `bmkg` | BMKG | HTTP | 印度尼西亚气象、气候和地球物理局地震测定,烈度速报 |
 
 ### 紧急地震速报 (EEW)
 
 | 源标识 | 显示名称 | 预警名称 |
 |:------:|:--------:|:--------:|
 | `jma` | JMA | 日本气象厅紧急地震速报 |
-| `cwa-eew` | CWA | 中央气象署强震即时预警 |
+| `cwa-eew` | CWA | 台湾中央气象署强震即时预警 |
 | `cea` | CEA | 中国地震预警网(M>=4.0) |
 | `cea-pr` | CEA-pr | 中国地震预警网省级融合源(M>=3.0) |
 | `sa` | ShakeAlert | 美国西海岸地震预警网 |
 | `kma-eew` | KMA | 韩国气象厅紧急地震速报 |
-| `earlyest` | Earlyest | 墨西哥地震预警 |
+| `earlyest` | Earlyest | INGV 境外地震速报 |
 | `globalquake` | GlobalQuake | GlobalQuake地震预警 |
 
 ### 气象与海啸
@@ -240,6 +244,8 @@ P-Alert观测网是由P-Alert地震P波感测仪所构成的即时地震观测�
 | 印度尼西亚海啸预警系统 | 海啸警报 | 印度洋区域 |
 | 澳大利亚联合海啸预警中心 | 海啸警报 | 印度洋/太平洋区域 |
 | PTWC | 海啸警报 | 太平洋海啸预警中心 |
+| 菲律宾火山地震研究所 | 海啸警报 | 菲律宾海啸预警 |
+| 印度尼西亚气象、气候和地球物理局 | 海啸警报 | 印度尼西亚海啸预警 |
 
 
 ---
@@ -380,7 +386,7 @@ DEFAULTS = {
 
 ## 🙏 致谢
 
-- **数据提供方**: FAN Studio, Wolfx, P2P 地震情報等
+- **数据提供方**: FAN Studio API, Wolfx Open API , P2P 地震情報等
 - **特别鸣谢**: 
 - **开源社区**: PySide6, ObsPy, Shapely, Pandas, NumPy 等优秀开源项目
 
