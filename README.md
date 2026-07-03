@@ -34,7 +34,7 @@
 
 **[![Bilibili](https://img.shields.io/badge/Bilibili-CelestialAsPeak-00A1D6?style=for-the-badge&logo=bilibili&logoColor=white)](https://space.bilibili.com/1680353559) · [![GitHub](https://img.shields.io/badge/GitHub-CAPQuake-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yourusername/CAPQuake)**
 
- [!WARNING]  
+**注意事项**
 > 
 > 这个项目目前**还没公开**,目前正在进行**代码二审工作**以及**性能优化**
 >
@@ -43,7 +43,6 @@
 > (作者甚至在文件内用**From**这种逆天代码暗示了这些文件**根本没法运行**)
 
 ```bash
-<div align="center">
 # 摘自CAPSPPE/IPF/Docall.txt
 # 这些运行不了！这些运行不了！这些运行不了！
 From CAPQuake.IPF.Core import HypocenterInversionEngine
