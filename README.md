@@ -16,25 +16,79 @@
 
 
 </div>
-
-
-
 <div align="center">
 
-
  **关于CAPQuake Project**
+
+<table>
+<tr>
+<td width="70%">
+
 >
 > **CAPQuake** 是一款开源的基于 **Python + PySide6 + ObsPy** 构建的地震，气象及其他灾情预警桌面应用程序。
 > 接入了FAN Studio API,Wolfx等10+**第三方数据源**以及CMA,USGS,GeoNet等30+**官方数据源**。
 >
->由 **纯 Python 开发**，采用了模块化设计，方便其他开发者**个性化改编**及制作插件。 更基于Obspy,Metradar等python强大的科学计算库，开发了 **CAPSPPE自动震源机制解**，**震源自动推算**等功能。
+>由 ** Python 开发**，采用了模块化设计，方便其他开发者**个性化改编**及制作插件。 更基于Obspy,Metradar等python强大的科学计算库，开发了 **CAPSPPE自动震源机制解**，**震源自动推算**等功能。
 
-实时关注项目开发进程以及运行效果，可前往我的**bilibili主页**。
+</td>
+<td width="30%">
+
+观看最新项目开发进程及运行效果:
 <div align="center">
 
-**[![Bilibili](https://img.shields.io/badge/Bilibili-CelestialAsPeak-00A1D6?style=for-the-badge&logo=bilibili&logoColor=white)](https://space.bilibili.com/1680353559) · [![GitHub](https://img.shields.io/badge/GitHub-CAPQuake-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yourusername/CAPQuake)**
+**[![Bilibili](https://img.shields.io/badge/Bilibili-CelestialAsPeak-00A1D6?style=for-the-badge&logo=bilibili&logoColor=white)](https://space.bilibili.com/1680353559)  [![GitHub](https://img.shields.io/badge/GitHub-CAPQuake-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yourusername/CAPQuake)**
+
+</td>
+</tr>
+</table>
+
+
+
+**CAPQuake Project 系列项目**
+
+<table>
+<tr>
+<td width="70%">
+
+>
+> 针对不同的需求，CAPQuake Project设共有3种不同版本的CAPQuake：
+> 
+> 1.**CAPQuake-Lite**
+> 为了性能而设计的版本，具备基础的地震及海啸预警功能。
+> 
+> 2.**CAPQuake-CAPSPPE**
+> 功能最多的版本。除了地震预警外，集成了气象，火山等更多预警功能，以及震源推算，差补时震源推算，CAPSPPE自动震源机制解等。还包括地震，台风模拟。
+> 
+> 3.**CAPQuake-Playground**
+> 专门把地震，台风模拟功能独立出来的一个版本。适合只对地震，台风模拟有兴趣的人。
+>
+
+</td>
+<td width="30%">
+
+版本连接:
+
+**[![GitHub](https://img.shields.io/badge/GitHub-CAPQuake_Lite-181717?style=for-the-badge&logo=github&logoColor=white)](
+  https://github.com/CelestialAsPeak/CAPQuake-Lite)**
+
+**[![GitHub](https://img.shields.io/badge/GitHub-CAPQuake_Playground-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/CelestialAsPeak/CAPQuake-Playground)**
+
+**[![GitHub](https://img.shields.io/badge/GitHub-CAPQuake_CAPSPPE-181717?style=for-the-badge&logo=github&logoColor=white
+  )](https://github.com/CelestialAsPeak/CAPQuake-CAPSPPE)**
+
+开源协议:
+
+**[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge&logo=open-source-initiative&logoColor=white)](https://github.com/CelestialAsPeak/CAPQuake-Lite/blob/main/LICENSE)**
+
+
+</td>
+</tr>
+</table>
+
+---
 
 **注意事项**
+
 > 
 > 这个项目目前**还没公开**,目前正在进行**代码二审工作**以及**性能优化**
 >
@@ -50,7 +104,7 @@ From CAPQuake.IPF.Inversion import DoubleDifferenceSolver
 ```
 </div>
 
-
+---
 
 ## ✨ 项目亮点   /   🖥️ 界面预览 
 
