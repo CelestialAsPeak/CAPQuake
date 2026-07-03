@@ -2,7 +2,7 @@
 
 <div align="center">
 
-# CAPQuake 
+# CAPQuake Project
 
 ![Preview](readme_img/icon_rewiew.png)
 
@@ -21,19 +21,33 @@
 
 <div align="center">
 
-**CAPQuake** 是一款开源的基于 **Python + PySide6 + ObsPy** 构建的地震，气象及其他灾情预警桌面应用程序。
 
-接入了FAN,Wolfx等10+**第三方数据源**以及CMA,USGS,GeoNet等30+**官方数据源**。
-
-由 **纯 Python 开发**，采用了模块化设计，方便其他开发者**个性化改编**及制作插件。
-
-更基于Obspy,Metradar等python强大的科学计算库，开发了 **CAPSPPE自动震源机制解**，**震源自动测算**等功能(开发中)
+> **关于CAPQuake Project**
+>
+> **CAPQuake** 是一款开源的基于 **Python + PySide6 + ObsPy** 构建的地震，气象及其他灾情预警桌面应用程序。
+> 接入了FAN Studio API,Wolfx等10+**第三方数据源**以及CMA,USGS,GeoNet等30+**官方数据源**。
+>
+>由 **纯 Python 开发**，采用了模块化设计，方便其他开发者**个性化改编**及制作插件。 更基于Obspy,Metradar等python强大的科学计算库，开发了 **CAPSPPE自动震源机制解**，**震源自动推算**等功能。
 
 实时关注项目开发进程以及运行效果，可前往我的**bilibili主页**。
 <div align="center">
 
 **[![Bilibili](https://img.shields.io/badge/Bilibili-CelestialAsPeak-00A1D6?style=for-the-badge&logo=bilibili&logoColor=white)](https://space.bilibili.com/1680353559) · [![GitHub](https://img.shields.io/badge/GitHub-CAPQuake-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yourusername/CAPQuake)**
 
+> [!WARNING]  
+> 
+> 这个项目目前**还没公开**,目前正在进行**代码二审工作**以及**性能优化**
+>
+> 请不要再下载**仓库里空的代码文件**，那些是作者没钱时，为了临时写一些小功能，方便Web端AI搞清架构而上传的**空壳文件**
+> 
+> (作者甚至在文件内用**From**这种逆天代码暗示了这些文件**根本没法运行**)
+
+```bash
+# 摘自CAPSPPE/IPF/Docall.txt
+# 这些运行不了！这些运行不了！这些运行不了！
+From CAPQuake.IPF.Core import HypocenterInversionEngine
+From CAPQuake.IPF.Inversion import DoubleDifferenceSolver
+```
 </div>
 
 
