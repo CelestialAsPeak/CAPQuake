@@ -22,7 +22,7 @@
 <div align="center">
 
 
-> **关于CAPQuake Project**
+ **关于CAPQuake Project**
 >
 > **CAPQuake** 是一款开源的基于 **Python + PySide6 + ObsPy** 构建的地震，气象及其他灾情预警桌面应用程序。
 > 接入了FAN Studio API,Wolfx等10+**第三方数据源**以及CMA,USGS,GeoNet等30+**官方数据源**。
@@ -34,7 +34,7 @@
 
 **[![Bilibili](https://img.shields.io/badge/Bilibili-CelestialAsPeak-00A1D6?style=for-the-badge&logo=bilibili&logoColor=white)](https://space.bilibili.com/1680353559) · [![GitHub](https://img.shields.io/badge/GitHub-CAPQuake-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yourusername/CAPQuake)**
 
-> [!WARNING]  
+ [!WARNING]  
 > 
 > 这个项目目前**还没公开**,目前正在进行**代码二审工作**以及**性能优化**
 >
@@ -43,6 +43,7 @@
 > (作者甚至在文件内用**From**这种逆天代码暗示了这些文件**根本没法运行**)
 
 ```bash
+<div align="center">
 # 摘自CAPSPPE/IPF/Docall.txt
 # 这些运行不了！这些运行不了！这些运行不了！
 From CAPQuake.IPF.Core import HypocenterInversionEngine
