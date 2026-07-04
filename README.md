@@ -51,7 +51,7 @@
 <td width="70%">
 
 
- 针对不同的需求，CAPQuake Project设共有3种不同版本的CAPQuake：
+ 针对不同的需求，CAPQuake Project设共有3种不同版本的CAPQuake以及API服务：
  
  1.**CAPQuake-Lite**
  为了性能而设计的版本，具备基础的地震及海啸预警功能。
@@ -61,6 +61,9 @@
  
  3.**CAPQuake-Playground**
  专门把地震，台风模拟功能独立出来的一个版本。适合只对地震，台风模拟有兴趣的人。
+
+ 4.**CAPQuake-CAPQHT-API**
+ 项目备用数据源，试验阶段，不保证稳定性，需要鉴权。
 
 </td>
 <td width="30%">
@@ -84,24 +87,25 @@
 </tr>
 </table>
 
----
 
-**注意事项**
+ 
+ > [!WARNING]
+> **这个项目目前还没公开**，正在进行**代码二审工作**以及**性能优化**。
+> 请不要再下载**仓库里空的代码文件**，那些是作者用 **From** 这种写法留下的空壳文件（这些文件**根本没法运行**）。
 
-> 
-> 这个项目目前**还没公开**,目前正在进行**代码二审工作**以及**性能优化**
+> （作者甚至在文件内用 **From** 这种写法暗示了这些文件**根本没法运行**）
 >
-> 请不要再下载**仓库里空的代码文件**，那些是作者没钱时，为了临时写一些小功能，方便Web端AI搞清架构而上传的**空壳文件**
-> 
-> (作者甚至在文件内用**From**这种逆天代码暗示了这些文件**根本没法运行**)
-
-```bash
-# 摘自CAPSPPE/IPF/Docall.txt
-# 这些运行不了！这些运行不了！这些运行不了！
-From CAPQuake.IPF.Core import HypocenterInversionEngine
-From CAPQuake.IPF.Inversion import DoubleDifferenceSolver
-```
-</div>
+> ```bash
+> # 摘自CAPSPPE/IPF/Docall.txt
+> # 这些运行不了！这些运行不了！这些运行不了！
+> From CAPQuake.IPF.Core import HypocenterInversionEngine
+> From CAPQuake.IPF.Inversion import DoubleDifferenceSolver
+> From CAPQuake.IPF.TravelTime import Compute1DVelocityTable
+> From CAPQuake.IPF.Location import GridSearchLocator
+> From CAPQuake.IPF.DepthPhase import DepthPhaseStacking
+> From CAPQuake.IPF.Magnitude import SpectrumBasedMw
+> From CAPQuake.IPF.FocalMechanism import PolarityAndAmplitudeRatio
+> ```
 
 ---
 
@@ -256,11 +260,11 @@ P-Alert观测网是由P-Alert地震P波感测仪所构成的即时地震观测�
 
 ### 地震测定情报源
 
-*为了保证部分地震测定数据源的稳定性，CAPQuake会以CAPQHT json数据为备用数据源，二者混用。
+*为了保证部分地震测定数据源的稳定性，CAPQuake会以CAPQHT API数据为备用数据源，二者混用。
 
 *实际请求数据时请留意数据来源的使用政策，避免过度请求导致对服务器造成较大压力。
 
-*CAPQHT json目前还在试验阶段，不保证稳定性
+*CAPQHT API目前还在试验阶段，不保证稳定性
 
 | 数据类型/来源 | 源标识 | 显示名称 | 协议 | 说明 |
 |:------:|:--------:|:----:|:------|:------|
