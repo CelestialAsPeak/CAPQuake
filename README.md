@@ -18,7 +18,7 @@
 
 ---
 
-CAPQuake 是一款开源的地震与其它灾害预警桌面应用,将全球大量数据源汇聚于一张地图,持续监测全球范围内地震、海啸、台风与火山灾害情况。
+CAPQuake 是一款地震与其它灾害预警桌面应用,将全球大量数据源汇聚于一张地图,持续监测全球范围内地震、海啸、台风与火山灾害情况。
 
 
 
@@ -239,14 +239,9 @@ USGS ShakeMap 将等值线、与逐站实测烈度完整落到地图，点击卡
 * 回放模式
 
 
-
 # 安装
 
 系统要求：Windows 10 / 11，需要网络连接。
-
-只想使用软件：走**方式一**，CAPQuake会提供打包版。如果是开发者想改编或贡献PR：走**方式二**。
-
-## 方式一：打包版
 
 1. 在发布页面下载压缩包
 2. 解压到任意文件夹，**路径不要包含中文**
@@ -254,66 +249,7 @@ USGS ShakeMap 将等值线、与逐站实测烈度完整落到地图，点击卡
 
 打包版自带运行环境，无需安装 Python。更新时重新下载新版覆盖即可。
 
-## 方式二：源码运行
 
-### 1. 安装 Python
-
-到 [python.org/downloads](https://www.python.org/downloads/) 下载 **3.10 以上**版本。安装时**务必勾选 “Add Python to PATH”**，否则后面的命令都会提示找不到。
-
-装好后按 `Win + R`，输入 `cmd` 回车，在命令行里验证：
-
-```bash
-python --version
-```
-
-输出 `Python 3.x.x` 即为成功。
-
-### 2. 下载代码
-
-任选其一：
-
-- **有 Git**：在命令行执行
-
-```bash
-git clone https://github.com/CelestialAsPeak/CAPQuake.git
-```
-
-- **没有 Git**：在仓库页面点 `Code → Download ZIP`，解压到任意位置
-
-### 3. 创建虚拟环境
-
-
-
-```bash
-cd CAPQuakeQt_0.5
-python -m venv venv
-.\venv\Scripts\activate
-```
-
-命令行提示符前出现 `(venv)` 即进入成功。以后每次启动项目前，都要先激活一次。
-
-
-### 4. 安装依赖
-
-```bash
-pip install -r requirements.txt
-pip install pygame>=2.6
-```
-
-也可选择国内镜像：
-
-```bash
-pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
-pip install pygame>=2.6 -i https://pypi.tuna.tsinghua.edu.cn/simple
-```
-
-### 5. 启动
-
-```bash
-python run.py
-```
-
-看到启动画面并最终出现地图窗口即成功。运行日志在 `logs/` 目录，配置保存在系统注册表。
 
 ## 常见问题
 
