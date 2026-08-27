@@ -38,8 +38,8 @@ CAPQuake 的数据来自全球 46 路数据源,官方机构为主、第三方聚
 | CEA-PR | 中国地震预警网省级网地震预警 | CAPQHT API |
 | CWA-EEW | 台湾中央气象署强震即时预警 | CAPQHT API, Wolfx |
 | ShakeAlert | ShakeAlert® Earthquake Early Warning (EEW) System | CAPQHT API |
-| Early-est | INGV 全球快速定位地震预警系统 | |
-| SASMEX | 墨西哥地震预警 | |
+| Early-est | INGV 快速定位地震情报(严格意义不算预警，在CAPQ中将此数据源作为EEW处理) | |
+| SASMEX | 墨西哥地震预警(不稳定) | |
 
 
 ### 地震测定
@@ -48,15 +48,16 @@ CAPQuake 的数据来自全球 46 路数据源,官方机构为主、第三方聚
 |---|---|---|
 | CENC | 中国地震台网 地震报告 | CAPQHT API，Wolfx |
 | CENC-INT | 中国地震台网 烈度速报 | NowQuake CENC 烈度速报 API |
-| JMA | 日本气象厅 地震情报 | P2PQuake API |
+| JMA | 日本气象厅 地震情报 | P2P地震情報 API |
 | JMA-LPGM | 長周期地震動に関する観測情報 ||
+| P2PQuake DYFI | P2P地震情報-地震感知情報(此功能仍在测试) | P2P地震情報 API |
 | Hi-net | NIED Hi-net 震源情报 | |
 | Hi-net AUQA-MT | NIED AUQA-MT 震源机制解 | |
 | F-net | NIED F-net 震源机制解 | |
 | K-NET · KiK-NET | NIED K-NET · KiK-NET地震事件报告 | |
 | NIED RISQ | NIED RISQ 地震速报 |  |
 | CWA | 台湾中央气象署 地震报告 | CAPQHT API |
-| P-Alert Strong Monitor Network | P-Alert 地震事件测站观测情报 | |
+| P-Alert Strong Monitor Network | P-Alert 地震事件测站观测情报 | CAPQHT API |
 | USGS | 美国地质调查局 地震报告 | |
 | USGS-CMT | 美国地质调查局 震源机制解 | |
 | USGS-ShakeMap | 美国地质调查局 ShakeMap摇晃地图,测站烈度报告 | |
@@ -66,27 +67,27 @@ CAPQuake 的数据来自全球 46 路数据源,官方机构为主、第三方聚
 | EMSC-CMT | 欧洲地中海地震中心 震源机制解 | |
 | EMSC[XX]-CMT | 欧洲地中海地震中心合作机构 震源机制解 | |
 | EMSC-DYFI | 欧洲地中海地震中心 社区有感地震上报报告 | |
-| AUST | 澳大利亚地球科学局 地震报告 | |
-| BEO | 塞尔维亚地震调查局 地震报告 | |
-| BGS | 英国地质调查局 地震报告 | |
-| BUD | 匈牙利地震台网 地震报告 | |
-| GFU | 捷克科学院地球物理研究所 地震报告 | |
-| GSRAS | 俄罗斯科学院地球物理调查局 地震报告 | |
-| IAG | 蒙古天文学与地球物理研究所 地震报告 | |
-| IGC | 巴拿马大学 地震报告 | |
-| IGN | 西班牙国家地理研究所 地震报告 | |
-| INGV | 意大利国家地球物理与火山学研究所 地震报告 | |
-| IPMA | 葡萄牙海洋与大气研究所 地震报告 | |
-| KOERI | 土耳其坎迪利天文台与地震研究所 地震报告 | |
-| LED | 德国巴登-符腾堡州地质矿产局 地震报告 | |
-| MCSM | 乌克兰特殊监测主中心 地震报告 | |
-| MLT | 马耳他大学地震台网 地震报告 | |
-| NDI | 印度气象局 地震报告 | |
-| NIEP | 罗马尼亚国家地球物理研究所 地震报告 | |
-| NORSAR | 挪威地震台阵 地震报告 | |
-| RSSC | 阿塞拜疆共和国地震调查中心 地震报告 | |
-| TRN | 特立尼达和多巴哥西印度群岛大学 地震报告 | |
-| YSVOC | 也门地震与火山观测中心 地震报告 | |
+| AUST | 澳大利亚地球科学局 地震报告 | CAPQHT API |
+| BEO | 塞尔维亚地震调查局 地震报告 | CAPQHT API |
+| BGS | 英国地质调查局 地震报告 | CAPQHT API |
+| BUD | 匈牙利地震台网 地震报告 | CAPQHT API |
+| GFU | 捷克科学院地球物理研究所 地震报告 | CAPQHT API |
+| GSRAS | 俄罗斯科学院地球物理调查局 地震报告 | CAPQHT API |
+| IAG | 蒙古天文学与地球物理研究所 地震报告 | CAPQHT API |
+| IGC | 巴拿马大学 地震报告 | CAPQHT API |
+| IGN | 西班牙国家地理研究所 地震报告 | CAPQHT API |
+| INGV | 意大利国家地球物理与火山学研究所 地震报告 | CAPQHT API |
+| IPMA | 葡萄牙海洋与大气研究所 地震报告 | CAPQHT API |
+| KOERI | 土耳其坎迪利天文台与地震研究所 地震报告 | CAPQHT API |
+| LED | 德国巴登-符腾堡州地质矿产局 地震报告 | CAPQHT API |
+| MCSM | 乌克兰特殊监测主中心 地震报告 | CAPQHT API |
+| MLT | 马耳他大学地震台网 地震报告 | CAPQHT API |
+| NDI | 印度气象局 地震报告 | CAPQHT API |
+| NIEP | 罗马尼亚国家地球物理研究所 地震报告 | CAPQHT API |
+| NORSAR | 挪威地震台阵 地震报告 | CAPQHT API |
+| RSSC | 阿塞拜疆共和国地震调查中心 地震报告 | CAPQHT API |
+| TRN | 特立尼达和多巴哥西印度群岛大学 地震报告 | CAPQHT API |
+| YSVOC | 也门地震与火山观测中心 地震报告 | CAPQHT API |
 | GFZ(GEOFON) | 德国地学研究中心 地震报告 | |
 | GeoNet | 新西兰地质灾害监测网 地震报告 | |
 | GeoNet-ShakeMap | 新西兰地质灾害监测网 摇晃地图,测站烈度报告 | |
@@ -128,7 +129,7 @@ CAPQuake 的数据来自全球 46 路数据源,官方机构为主、第三方聚
 | JMA-TSUNAMI | 日本气象厅 海啸予报(若干的海面变动),海啸注意报,海啸警报,大海啸警报 | |
 | PTWC | 太平洋海啸预警中心 海啸预警| |
 | NTWC | 美国国家海啸预警中心 海啸预警| |
-| GDACS-TSUNAMI | 全球灾害警报与协调系统 海啸预警 | |
+| CAPQHT-API-MIX | 全球28+机构海啸观测情报，海啸预警融合源 | CAPQHT-API-mIX |
 | JATWC | 澳大利亚联合海啸预警中心 海啸预警| |
 | InaTEWS | 印度尼西亚海啸预警系统 海啸预警| |
 | INCOIS | 印度国家海洋信息服务中心 海啸预警 | |
@@ -144,7 +145,7 @@ CAPQuake 的数据来自全球 46 路数据源,官方机构为主、第三方聚
 |---|---|---|
 | PTWC | 太平洋海啸预警中心 验潮站实测波高观测点 | |
 | NTWC | 美国国家海啸预警中心 验潮站实测波高观测点 | |
-| GDACS | 全球范围 验潮站实测波高观测点 | |
+| CAPQHT-API-MIX | 全球28+机构海啸观测情报融合源 | CAPQHT-API-mIX |
 
 ### 火山预警
 
@@ -152,6 +153,7 @@ CAPQuake 的数据来自全球 46 路数据源,官方机构为主、第三方聚
 |---|---|---|
 | JMA-VOLCANO | 日本气象厅 火山情报 | |
 | GeoNet-VOLCANO | 新西兰地质灾害监测网 火山情报 | |
+| CAPQHT-API-MIX | 全球12+机构火山观测情报，火山预警融合源 | CAPQHT-API-mIX |
 
 ### 其它
 
@@ -168,7 +170,7 @@ CAPQuake 的数据来自全球 46 路数据源,官方机构为主、第三方聚
 |---|---|---|
 | 全国雷达组合反射率 | 中国气象局 | CAPQHT API |
 | 全国降水图层 | 中国气象局 | CAPQHT API |
-| 国家气象灾害预警 | 中国气象局 | |
+| 国家气象灾害预警 | 中国气象局 |  CAPQHT API |
 
 ---
 
