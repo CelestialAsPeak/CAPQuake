@@ -46,7 +46,7 @@ CAPQuake 的数据来自全球 46 路数据源,官方机构为主、第三方聚
 
 | 数据源 | 中文名 | 来源 |
 |---|---|---|
-| CENC | 中国地震台网 地震报告 | CAPQHT API，Wolfx |
+| CENC | 中国地震台网 地震报告 | CAPQHT API |
 | CENC-INT | 中国地震台网 烈度速报 | NowQuake CENC 烈度速报 API |
 | JMA | 日本气象厅 地震情报 | P2P地震情報 API |
 | JMA-LPGM | 長周期地震動に関する観測情報 ||
