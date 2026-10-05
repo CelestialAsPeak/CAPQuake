@@ -273,6 +273,29 @@ USGS ShakeMap 将等值线、与逐站实测烈度完整落到地图，点击卡
 * 回放模式
 * CAPSPPE
 
+### 代码参考
+本项目参考了以下项目的源代码。
+* [TREM-Lite](https://github.com/ExpTechTW/TREM-Lite)
+* [TREM-tauri](https://github.com/ExpTechTW/TREM-tauri)
+* [kanameishi](https://github.com/Lipomoea/kanameishi)
+* [EQMonitor](https://github.com/YumNumm/EQMonitor)
+* [S-net_Viewer](https://github.com/Ichihai1415/S-net_Viewer)
+* [GlobalQuake](https://github.com/xspanger3770/GlobalQuake)
+* [EEWCN](https://github.com/OpenEEWCN/eewcn)
+* [地震情报实况栏(Rolling-Subtitle)](https://github.com/Jian11323/Rolling-Subtitle)
 
+### 设计参考
+本项目参考了以下项目的优秀设计。
+* [tauQuake](https://github.com/tauQuake-dev/tauQuake)
+* [srev(scratch-realtime-earthquake-viewer-page)](https://github.com/kotoho7/scratch-realtime-earthquake-viewer-page)
+* [JQuake](https://jquake.net/)
+* [EQMonitor](https://github.com/YumNumm/EQMonitor)
+* [EQuake](https://github.com/SeriesNotFound/EQuake)
+* ~~NowQuake~~
+* ~~CEIV~~
 
-
+### 其他优秀的 EEW 项目：
+* [astrbot_plugin_disaster_warning](https://github.com/Pancakes-Labs/astrbot_plugin_disaster_warning)
+* [tauQuake](https://github.com/tauQuake-dev/tauQuake)
+* [RhythmQuake](https://github.com/yuelinyayun-star/flutterRhythmQuake)
+* [SmartQuake](https://github.com/xiaolangxuri111/SmartQuake)
