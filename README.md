@@ -106,7 +106,7 @@ CAPQuake 的数据来自全球 46 路数据源,官方机构为主、第三方聚
 | EGYPT | 埃及国家地震局 地震报告 | |
 | KMA | 韩国气象厅 本土及远土地震报告 | |
 | BCSF | 法国中央地震研究所 本土及远土地震报告 | |
-| FSSN | FSSN 地震报告 | Fan Studio API |
+| CAPSPPE | CAPSPPE 自动推算 | Local |
 
 ### 测站网络
 
