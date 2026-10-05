@@ -18,7 +18,7 @@
 
 ---
 
-CAPQuake 是一款开源的地震与其它灾害预警桌面应用,将全球大量数据源汇聚于一张地图,持续监测全球范围内地震、海啸、台风与火山灾害情况。
+CAPQuake 是一款地震与其它灾害预警桌面应用,,持续监测全球范围内地震、海啸、台风与火山灾害情况。
 
 
 
@@ -30,16 +30,16 @@ CAPQuake 的数据来自全球 46 路数据源,官方机构为主、第三方聚
 
 | 数据源 | 中文名 | 来源 |
 |---|---|---|
-| JMA-EEW | 日本气象厅 紧急地震速报(予报，警报) | Wolfx |
+| JMA-EEW | 日本气象厅 紧急地震速报(予报，警报) | CAPQHT API |
 | JMA-EEW-Special | 日本气象厅 紧急地震速报(警报) | P2PQuake API |
 | SC | 四川省地震局 地震预警 | Wolfx |
 | CQ | 重庆市地震局 地震预警 | Wolfx |
-| CEA | 中国地震预警网地震预警 | CAPQHT API,Wolfx |
+| CEA | 中国地震预警网地震预警 | CAPQHT API |
 | CEA-PR | 中国地震预警网省级网地震预警 | CAPQHT API |
-| CWA-EEW | 台湾中央气象署强震即时预警 | CAPQHT API, Wolfx |
+| CWA-EEW | 台湾中央气象署强震即时预警 | CAPQHT API |
 | ShakeAlert | ShakeAlert® Earthquake Early Warning (EEW) System | CAPQHT API |
 | Early-est | INGV 快速定位地震情报(严格意义不算预警，在CAPQ中将此数据源作为EEW处理) | |
-| SASMEX | 墨西哥地震预警(不稳定) | |
+| SASMEX | 墨西哥地震预警(检出，警报) | CAPQHT API |
 
 
 ### 地震测定
@@ -116,10 +116,12 @@ CAPQuake 的数据来自全球 46 路数据源,官方机构为主、第三方聚
 | NIED S-Net |  NIED 日本海沟海底地震海啸观测网 |  | 150 |
 | P-Alert | P-Alert 观测网 | | 785 |
 | KMA-PEWS | 韩国气象厅 测站观测网 | | 550 |
-| EarthScope SeedLink | EarthScope 全球测站(23 台网) | | 961 |
-| GEOFON SeedLink | GEOFON 全球测站(3 台网) |  | 77 |
 | Kwatch-24h | 日本终端振动感知网络(振動レベル) | | |
-
+| EarthScope SeedLink | EarthScope (51 台网) | | 2272 |
+| GEOFON SeedLink | GEOFON (22 台网) |  | 245 |
+| GeoNet SeedLink | GeoNet (1 台网) |  | 484 |
+| RESIF SeedLink | RESIF (10 台网) |  | 412 |
+| RIMES SeedLink | RIMES (3 台网) |  | 40 |
 
 ### 海啸预警
 
@@ -188,20 +190,27 @@ CAPQuake 的数据来自全球 46 路数据源,官方机构为主、第三方聚
 为了更方便用户可视化，我们将屏幕左侧改造成了负一屏专属区域，设计参考了IPad的负一屏设计逻辑，支持自定义组件，组件交互，组件个性化设置，拖拽改变位置等等。也可以自选关闭负一屏。
 等待项目基础功能完善后，我们会重点开发负一屏的相关组件，同时支持插件扩展并提供简单的插件手册与md，方便用户自定义。
 
-*下列效果展示图以波形组件为例，支持自定义尺寸，改变位置与自选全球900+实时台站波形。*
+*下列效果展示图以波形组件为例，支持自定义尺寸，改变位置与自选全球3000+实时台站波形。*
 
 <div align="center">
 
-![负一屏预览](imgnew/desk_1.png)
+![负一屏预览](imgnew/a_fyp1.png)
+![负一屏预览](imgnew/a_fyp2.png)
 
 </div>
 
 ### 全球测站与波形
 
-项目支持实时查看EarthScope26台网与GEOFON3台网的全部测站实时情况，同时可以通过波形组件自定义查看具体单个测站的波形。CAPQuake会实时计算测站的PGA(如果支持)，PGV,PGD,LPGD,并拟合成震度与CSIS.
+项目支持实时查看来自全球各地的seedlink服务器,100+台网,约4000+全部测站实时情况，同时可以通过波形组件自定义查看具体单个测站的波形。CAPQuake会实时计算测站的PGA(如果有测站元数据)，PGV,PGD,LPGD,并拟合成震度与CSIS.
+实际使用此功能时，请注意各个Seedlink服务提供商的连接政策与台站元数据更新情况。部分私有Seedlink请自主与服务商申请后再接入。
+CAPQuake目前支持Seedlink V3,Seedlink V3.2,Seedlink V4的连接协议。
 
 <p align="center">
-  <img src="imgnew/station1.png" width="49%"><img src="imgnew/station2.png" width="49%">
+  <img src="imgnew/a_seedlink1.png" width="49%"><img src="imgnew/a_seedlink2.png" width="49%">
+</p>
+
+<p align="center">
+  <img src="imgnew/a_seedlink3.png" width="49%"><img src="imgnew/a_seedlink4.png" width="49%">
 </p>
 
 ### 海啸模式
@@ -211,12 +220,12 @@ CAPQuake 的数据来自全球 46 路数据源,官方机构为主、第三方聚
 *下列效果展示图内容为2024年日本能登半岛7.4级地震海啸预警，2025年俄罗斯勘察加8.8级巨大地震的海啸预警与观测波高，2004年印度洋9.3级巨大地震的海啸预警与观测波高情况。*
 
 <p align="center">
-  <img src="imgnew/jp_tsu.png" width="49%"><img src="imgnew/ru_tsu.png" width="49%">
+  <img src="imgnew/jp_tsu.png" width="49%"><img src="imgnew/a_tsu_india.png" width="49%">
 </p>
 
 <div align="center">
 
-![海啸预览](imgnew/in_tsu.png)
+![海啸预览](imgnew/a_tsu_russia.png)
 
 </div>
 
@@ -262,100 +271,8 @@ USGS ShakeMap 将等值线、与逐站实测烈度完整落到地图，点击卡
 
 * 火山模式
 * 回放模式
+* CAPSPPE
 
-
-
-# 安装
-
-系统要求：Windows 10 / 11，需要网络连接。
-
-只想使用软件：走**方式一**，CAPQuake会提供打包版。如果是开发者想改编或贡献PR：走**方式二**。
-
-## 方式一：打包版
-
-1. 在发布页面下载压缩包
-2. 解压到任意文件夹，**路径不要包含中文**
-3. 双击 `CAPQuake.exe`，等启动画面结束，出现地图窗口即成功
-
-打包版自带运行环境，无需安装 Python。更新时重新下载新版覆盖即可。
-
-## 方式二：源码运行
-
-### 1. 安装 Python
-
-到 [python.org/downloads](https://www.python.org/downloads/) 下载 **3.10 以上**版本。安装时**务必勾选 “Add Python to PATH”**，否则后面的命令都会提示找不到。
-
-装好后按 `Win + R`，输入 `cmd` 回车，在命令行里验证：
-
-```bash
-python --version
-```
-
-输出 `Python 3.x.x` 即为成功。
-
-### 2. 下载代码
-
-任选其一：
-
-- **有 Git**：在命令行执行
-
-```bash
-git clone https://github.com/CelestialAsPeak/CAPQuake.git
-```
-
-- **没有 Git**：在仓库页面点 `Code → Download ZIP`，解压到任意位置
-
-### 3. 创建虚拟环境
-
-
-
-```bash
-cd CAPQuakeQt_0.5
-python -m venv venv
-.\venv\Scripts\activate
-```
-
-命令行提示符前出现 `(venv)` 即进入成功。以后每次启动项目前，都要先激活一次。
-
-
-### 4. 安装依赖
-
-```bash
-pip install -r requirements.txt
-pip install pygame>=2.6
-```
-
-也可选择国内镜像：
-
-```bash
-pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
-pip install pygame>=2.6 -i https://pypi.tuna.tsinghua.edu.cn/simple
-```
-
-### 5. 启动
-
-```bash
-python run.py
-```
-
-看到启动画面并最终出现地图窗口即成功。运行日志在 `logs/` 目录，配置保存在系统注册表。
-
-## 常见问题
-
-**Q：遇到问题/BUG，怎么办？**
-打开 `logs/` 里最新的日志文件，截图提交issus或咨询作者。
-
-**Q：启动后地图一直没有数据？**
-先确认网络正常；首次启动要拉一批历史数据，需要等一会儿。Windows 防火墙弹窗请点“允许”。
-
-**Q：首次启动很慢？**
-正常，首次要拉历史数据、生成地图缓存，第二次会快很多。
-
-**Q：卡顿怎么办？**
-CAPQuake非常吃CPU,如果出现卡顿，请检查CPU占用是否过高。如果还是不行，请运行CAPQuake Lite版本(后续上线)。
-
-**Q：（临时）如何参加内测？**
-我们正在搭建答题网站，通过答题后即可参加内测。
 
 
 
